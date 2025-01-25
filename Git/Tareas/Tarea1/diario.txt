@@ -1,2 +1,3 @@
 Día 1: Explorando Git
 Día 2: Aprendiendo sobre commits
+Día 3: Descubriendo ramas
