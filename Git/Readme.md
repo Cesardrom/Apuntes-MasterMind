@@ -32,6 +32,15 @@
     1. Creamos una carpeta y abrimos dicha carpeta con visual studio code
     2. Abrimos un termial con Ctrl+Ñ o sino Ctrl+Shift+P y pones create new terminal y abrimos un git bash.
 
+#### Pull request.
+    El pull request es una peticion para mezclar las ramas que elijas y se hace desde github en la seccion con el mismo nombre teniendo que crear la peticion y haciendo un merge de las ramas que hayas elegido. Esto tambien se puede hacer el local, recordar siempre que en local despues de hacer esta accion hacer un pull.
+
+#### Forks.
+    Los Forks son utilizados para trabajar en proyectos de "Open Source". Los Forks son como "copias" del repositorio principal del Open Source en el cual despues haremos un merge de nuestro Fork a el repositorio de Open Source.
+
+#### Gitignore
+    Sirve para ignorar archivos y carpetas que no quieres o debes subir a tu repositorio a Github
+
 #### Comandos de Git
 
     - git init: Crear un repositorio desde termina.
@@ -46,4 +55,17 @@
     - git reset hash: Se eliminan los commits que se hayan echo despues del que elegimos el hash manteniendo los cambios en el Working Tree.
     - git reset --hard hash: Se eliminan los commits que se hayan echo despues del que elegimos el hash sin mantener los cambios en el Working Tree.
     - git restore: Restauras los archivos que se hayn subido a commits pero que hayas borrado en el Workin Tree.
-    -
+    - git remote add  origin link: Conectar el local con el servidor de github con SSH
+    - git remote -v: ver todos los repositorios remotos a los que estamos conectados
+    - git push -u rama: Subir el ultimo commit realizado a la rama que hayas especificado
+    - git clone url o ssh: Bajar un repositorio a local.
+    - rm -rf carpeta repo: Borrar el repositorio entero de git del local.
+    - git pull :Bajamos los cambios realizados en el repositorio
+    - git checkout -b nombre rama: Crear una rama y cambiar a ella de manera automatica en local. Se pueden crear ramas dentro de ramas.
+    - git branch: Visualizar todas las ramas que hay en el proyecto.
+    - git commit -a -m: Es como hacer el git add . y el commit en la misma linea.
+    - **git push -u origin nombre de la rama: Creamos una rama en el repo de github y subimos el ultimo commit realizado en ella**
+    - git merge nombre de la rama: Se hace un pull request y merge en local de la rama en la que te encuentras situado con la que escribes en el comando.
+    - git log --graph: Muestra un "grafico" donde se puede ver la actividad de las ramas en los commits.
+    - git pull rama en la que estes rama remota: Bajar los cambios de una rama que no a sido combinada con la rama en la que estas. Tambien es una forma en la que resolver los conflictos que se puedan causar en ramas.
+    - git commit: Es un comando para crear un commit pero a traves del editor de texto llamado vim donde se puede añadir mas informacion al commit.
